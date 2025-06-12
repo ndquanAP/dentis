@@ -62,7 +62,8 @@ header {
 .sidebar {
     position: fixed;
     top: 0;
-    right: -250px; /* Ẩn bên phải */
+    right: -250px;
+    /* Ẩn bên phải */
     width: 250px;
     height: 100%;
     background: white;
@@ -116,7 +117,8 @@ header {
 /* Giữ phần giới thiệu có chiều rộng và chiều cao cụ thể */
 .container-slide-introduction {
     width: 100%;
-    padding-bottom: 10px; /* Tạo khoảng cách với footer */
+    padding-bottom: 10px;
+    /* Tạo khoảng cách với footer */
     /* position: relative; */
     display: flex;
     justify-content: center;
@@ -127,7 +129,7 @@ header {
 .swiper {
     width: 100%;
     height: 100%;
-  }
+}
 
 .swiper-slide {
     text-align: center;
@@ -136,21 +138,21 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
 .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
 
 .container-slide-introduction .swiper-pagination-introduction {
     display: block !important;
     position: relative !important;
     bottom: 25px;
     width: 100% !important;
-    height: 20px !important; 
+    height: 20px !important;
     text-align: center;
     z-index: 2;
 
@@ -168,9 +170,9 @@ header {
 /* giới thiệu  */
 .text-header {
     padding: 5px 0;
-    color: #058584; 
+    color: #058584;
     font-size: 60px;
-    font-family:  'BAHNSCHRIFT Condensed', sans-serif;
+    font-family: 'BAHNSCHRIFT Condensed', sans-serif;
     font-weight: 700;
     line-height: 1.8;
     text-align: center;
@@ -180,6 +182,7 @@ header {
 .image-for-content {
     width: 100%;
 }
+
 .image-for-content img {
     width: 100%;
 }
@@ -189,7 +192,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; /* Căn giữa nội dung trong div */
+    text-align: center;
+    /* Căn giữa nội dung trong div */
     flex: 3;
 }
 
@@ -203,10 +207,11 @@ header {
 }
 
 .ceractorcol p {
-    margin: 5px 0; /* Để lại khoảng cách nhỏ giữa các đoạn văn bản */
+    margin: 5px 0;
+    /* Để lại khoảng cách nhỏ giữa các đoạn văn bản */
     font-family: 'BAHNSCHRIFT Condensed', sans-serif;
     color: #00DBFF;
-    
+
 }
 
 .ceractordoc {
@@ -217,8 +222,10 @@ header {
     padding: 5px 15px;
     overflow-y: scroll;
 }
+
 .ceractordoc::-webkit-scrollbar {
-    display: none; /* Ẩn thanh cuộn trên WebKit/Blink */
+    display: none;
+    /* Ẩn thanh cuộn trên WebKit/Blink */
 }
 
 /* swiper */
@@ -274,13 +281,14 @@ header {
     display: block;
     text-align: left;
 }
+
 .card {
     width: 280px;
     margin: 0 auto;
     background: white;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     padding: 10px;
 }
@@ -322,7 +330,8 @@ header {
 /* Đảm bảo định vị pagination đúng */
 #mySwiperService {
     position: relative;
-    padding-bottom: 30px; /* để chừa khoảng cho pagination hiển thị */
+    padding-bottom: 30px;
+    /* để chừa khoảng cho pagination hiển thị */
 }
 
 /* Chỉ ảnh hưởng pagination trong #mySwiperService */
@@ -408,16 +417,17 @@ footer {
     background-color: #058584;
     color: white;
     text-align: left;
-    padding: 5% 15%;
 }
 
 .footer-container {
     display: flex;
     flex-direction: row;
     flex: 1;
+    padding: 2% 2% 0 2%;
 }
 
 .footer-left {
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
@@ -431,7 +441,16 @@ footer {
     box-sizing: border-box;
 }
 
+.map-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5%;
+}
 
+.social-icon {
+    font-size: 2.5rem;
+    transition: transform 0.2s;
+}
 
 .social-icons a {
     display: inline-block;
@@ -440,15 +459,39 @@ footer {
     font-size: 20px;
 }
 
+  .messenger-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0084ff; /* Màu xanh Messenger */
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px; /* kích thước icon */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+    z-index: 9999;
+  }
+
+  .messenger-btn:hover {
+    background-color: #006fdd; /* Màu xanh đậm khi hover */
+    text-decoration: none;
+    color: white;
+  }
+
 @media (max-width: 768px) {
 
     .text-header {
         font-size: 20px;
     }
 
-    footer {
+    /* footer {
         padding: 2% 5%;
-    }
+    } */
 
     .form-control {
         margin-bottom: 10px;
@@ -468,8 +511,23 @@ footer {
         display: flex;
         flex-direction: column;
     }
+
     p {
         font-size: 14px;
     }
-}
 
+    .map-container {
+        width: 100%;
+        margin: 0 auto;
+        /* padding: 0 5%; */
+
+
+    }
+
+    .messenger-float {
+        bottom: 15px;
+        right: 15px;
+        padding: 12px;
+        font-size: 24px;
+    }
+}
