@@ -459,11 +459,12 @@ footer {
     font-size: 20px;
 }
 
-  .messenger-btn {
+.messenger-btn {
     position: fixed;
-    bottom: 20px;
+    bottom: 90px;
     right: 20px;
-    background-color: #0084ff; /* Màu xanh Messenger */
+    background-color: #0084ff;
+    /* Màu xanh Messenger */
     color: white;
     width: 60px;
     height: 60px;
@@ -471,17 +472,44 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 36px; /* kích thước icon */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    font-size: 36px;
+    /* kích thước icon */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
     z-index: 9999;
-  }
+}
 
-  .messenger-btn:hover {
-    background-color: #006fdd; /* Màu xanh đậm khi hover */
+.messenger-btn:hover {
+    background-color: #006fdd;
+    /* Màu xanh đậm khi hover */
     text-decoration: none;
     color: white;
-  }
+}
+
+.facebook-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1877f2;
+    /* Màu xanh Facebook */
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    z-index: 9999;
+}
+
+.facebook-btn:hover {
+    background-color: #0e64d2;
+    text-decoration: none;
+    color: white;
+}
 
 @media (max-width: 768px) {
 
@@ -524,10 +552,19 @@ footer {
 
     }
 
-    .messenger-float {
-        bottom: 15px;
-        right: 15px;
-        padding: 12px;
+    .messenger-btn {
+        bottom: 70px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
         font-size: 24px;
     }
+
+    .facebook-btn {
+        width: 40px;
+        right: 10px;
+        height: 40px;
+        font-size: 24px;
+    }
+
 }
